@@ -1,4 +1,4 @@
-package WEEK_1.Data_structure_Algorithm.code;
+package WEEK_1.Data_structure_Algorithm.ecommerce_search.code;
 import java.util. *;
 
  class product {
