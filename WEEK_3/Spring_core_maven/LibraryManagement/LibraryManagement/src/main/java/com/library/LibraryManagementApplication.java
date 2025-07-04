@@ -10,6 +10,6 @@ public class LibraryManagementApplication {
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
         BookService service = context.getBean("bookService", BookService.class);
-        service.addBook("Spring DI in Action");
+        service.addBook("The Spring Handbook");
     }
 }
