@@ -6,9 +6,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("applicationContext.xml");
 
         BookService service = context.getBean("bookService", BookService.class);
-        service.addBook("The Spring Handbook");
+        service.addBook("Spring DI in Action");
     }
 }

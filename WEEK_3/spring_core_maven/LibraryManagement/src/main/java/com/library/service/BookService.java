@@ -3,14 +3,14 @@ package com.library.service;
 import com.library.repository.BookRepository;
 
 public class BookService {
-    private BookRepository bookRepository;
+    private BookRepository repository;
 
-    // Setter for Dependency Injection
-    public void setBookRepository(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
+    public BookService(BookRepository repository) {
+        this.repository = repository;
+        System.out.println("BookService: Constructor called");
     }
 
     public void addBook(String name) {
-        bookRepository.save(name);
+        repository.save(name);
     }
 }
