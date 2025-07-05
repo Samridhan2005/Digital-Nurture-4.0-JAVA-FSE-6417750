@@ -1,16 +1,17 @@
+
 package com.library.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import com.library.repository.BookRepository;
 
+@Service
 public class BookService {
-    private BookRepository repository;
+    
+    @Autowired
+    private BookRepository bookRepository;
 
-    public BookService(BookRepository repository) {
-        this.repository = repository;
-        System.out.println("BookService: Constructor called");
-    }
-
-    public void addBook(String name) {
-        repository.save(name);
+    public void addBook(String bookName) {
+        bookRepository.save(bookName);
     }
 }
