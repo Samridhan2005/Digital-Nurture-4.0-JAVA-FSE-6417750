@@ -1,7 +1,7 @@
 import '../Stylesheets/mystyle.css';
 
 const percentToDecimal = (decimal) => {
-  return (decimal * 100).toFixed(2) + '%';  // Convert to percentage
+  return (decimal * 100).toFixed(2) + '%';  
 };
 
 const calcScore = (total, goal) => {
